@@ -8,7 +8,7 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 - Desktop range includes mini PCs, small-form-factor PCs, towers, all-in-ones and refurbished complete sets, with supplier listing links and magnifiable product photos
 - Product search and category filters
 - Product image magnifier/details view
-- Manufacturer walkthrough videos for Epson print-head cleaning and Canon paper-jam removal
+- A Jonakid Tech printer repair video plus manufacturer walkthroughs for Epson print-head cleaning and Canon paper-jam removal
 - CCTV quote builder for camera quantities, 11 camera types, Hikvision/Dahua/Uniview/EZVIZ/Imou/TP-Link Tapo brands, DVR/XVR/NVR channel sizes, storage and Nairobi installation estimates; sends the quote to WhatsApp
 - Quantity selectors, browser cart and WhatsApp cart checkout
 - Individual product orders and repair enquiry links prefilled for WhatsApp
