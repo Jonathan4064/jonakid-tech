@@ -33,3 +33,14 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 
 The site uses custom vector illustrations for non-printer product visuals and Google Fonts when a network connection is available.
 
+## Firebase Hosting
+
+A `firebase.json` is included for this static site. From the repository root, sign in to Firebase CLI and deploy Hosting:
+
+```sh
+npm install -g firebase-tools
+firebase login
+firebase deploy --only hosting --project YOUR_FIREBASE_PROJECT_ID
+```
+
+Create or select a Firebase project first. Firebase Hosting can serve a custom domain, but `www.jonakidtech.co.ke` must be registered and its DNS records configured with the provider that controls it. After Firebase verifies the domain, update the canonical URL, social links and sitemap to the custom domain. Keep Google Search Console verified and resubmit the sitemap.
