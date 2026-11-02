@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "mode": "snapshot",
+  "updatedAt": "2026-11-02T00:00:00+03:00",
+  "source": "Jonakid Tech Kenya reference snapshot",
+  "currency": "KSh",
+  "prices": {
+    "cameraTypes": {
+      "dome": [3500, 6500],
+      "bullet": [4000, 7500],
+      "turret": [2400, 6500],
+      "ptz": [36500, 90000],
+      "ip": [6000, 14000],
+      "wifi": [3500, 15000],
+      "fisheye": [12000, 45000],
+      "infrared": [3000, 7500],
+      "varifocal": [8000, 28000]
+    },
+    "recorders": {
+      "DVR": {
+        "4": [4900, 9500],
+        "8": [7400, 13500],
+        "16": [15500, 26700],
+        "32": [37900, 59000]
+      },
+      "XVR": {
+        "4": [4800, 9500],
+        "8": [7400, 13500],
+        "16": [15500, 26700],
+        "32": [37900, 59000]
+      },
+      "NVR": {
+        "4": [8500, 14500],
+        "8": [13500, 20000],
+        "16": [16000, 40000],
+        "32": [21000, 45000],
+        "64": [78000, 85000]
+      }
+    },
+    "storage": {
+      "0": [0, 0],
+      "1": [6500, 9500],
+      "2": [9500, 14000],
+      "4": [16000, 24000]
+    },
+    "materialsPerCamera": {
+      "analog": [1000, 1800],
+      "network": [1500, 3500],
+      "wifi": [500, 1500]
+    },
+    "installation": [
+      { "max": 4, "range": [8000, 18000] },
+      { "max": 8, "range": [15000, 35000] },
+      { "max": 16, "range": [35000, 80000] }
+    ],
+    "products": {
+      "hp-elitebook-840-g3": { "price": 24999 },
+      "lenovo-thinkpad-t480": { "price": 29999, "originalPrice": 35999 },
+      "dell-vostro-3520": { "price": 49999 },
+      "asus-x409fa": { "price": 66000 },
+      "acer-aspire-5-a514-54": { "price": 70000, "originalPrice": 75000 },
+      "msi-modern-14-c13m": { "price": 68000 },
+      "apple-macbook-air-m1-2020": { "price": 80000, "originalPrice": 96000 },
+      "hp-pro-tower-290-g9": { "price": 89999 },
+      "dell-optiplex-7010-tower": { "price": 114999 },
+      "dell-optiplex-3050-tower": { "price": 72999 },
+      "lenovo-thinkcentre-neo-50t": { "price": 59000 },
+      "hp-proone-240-g9": { "price": 134999 },
+      "hp-elitedesk-800-g5-sff": { "price": 28999 },
+      "hp-pro-mini-260-g9-i3": { "price": 52000 },
+      "dell-optiplex-3080mt-bundle": { "price": 74999 },
+      "bizhub-c250i": { "price": 100000 },
+      "bizhub-c300i": { "price": 110000 },
+      "bizhub-c360i": { "price": 115000 },
+      "bizhub-287-mono": { "price": 70000 },
+      "bizhub-367-mono": { "price": 75000 },
+      "bizhub-c658": { "price": 140000 },
+      "bizhub-c554": { "price": 120000 },
+      "bizhub-c458": { "price": 115000 },
+      "bizhub-c258": { "price": 80000 },
+      "bizhub-227-mono": { "price": 65000 },
+      "bizhub-c3320i": { "price": 50000 },
+      "bizhub-c3350i": { "price": 55000 },
+      "bizhub-c364": { "price": 95000 },
+      "bizhub-c224": { "price": 80000 },
+      "bizhub-c368": { "price": 90000 },
+      "bizhub-c558": { "price": 120000 },
+      "bizhub-c308": { "price": 85000 },
+      "bizhub-c284": { "price": 90000 },
+      "bizhub-c454": { "price": 115000 },
+      "bizhub-c227": { "price": 75000 },
+      "bizhub-c287": { "price": 80000 }
+    },
+    "components": {
+      "laptopChargers": { "hpBluePin": [1500, 4500], "lenovoUsbC": [2500, 4999] },
+      "laptopBatteries": { "hpCs03xl": [4499, 4499], "lenovoT480Internal": [6500, 7500] },
+      "printerParts": {
+        "inkBottle": [900, 2200], "inkCartridge": [1000, 3000], "toner": [4000, 15000], "powder": [500, 3000], "paper": [500, 1200],
+        "pickup": [1500, 4000], "drum": [4000, 10000], "fuser": [5000, 15000], "transfer": [4000, 15000], "chargeRoller": [1000, 4500],
+        "waste": [1500, 6000], "printhead": [3000, 8000], "gears": [1000, 6000], "motor": [2000, 8000], "scanner": [3000, 6000],
+        "mainboard": [5000, 12000], "power": [3000, 5500], "sensor": [1000, 4000]
+      }
+    }
+  }
+}
+

@@ -1,438 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Printer System Solutions - Printer & Photocopier Repair | Limuru</title>
-    <meta name="description" content="Professional printer and photocopier repair services in Limuru. We also supply genuine spare parts and consumables. Call 0790652803">
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
-<body class="font-sans antialiased text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <i data-feather="printer" class="h-8 w-8 text-blue-600"></i>
-                        <span class="ml-2 text-xl font-bold text-gray-900">Printer System Solutions</span>
-                    </div>
-                </div>
-                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-                    <a href="#services" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
-                    <a href="#parts" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Spare Parts</a>
-                    <a href="#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">About Us</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Contact</a>
-                </div>
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="hero-gradient text-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl" data-aos="fade-down">
-                    Printer & Photocopier Repair Experts
-                </h1>
-                <p class="mt-6 max-w-lg mx-auto text-xl" data-aos="fade-up" data-aos-delay="100">
-                    Professional repair services and genuine spare parts in Limuru. Fast, reliable, and affordable solutions for your office equipment.
-                </p>
-                <div class="mt-10 flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
-                    <a href="tel:0790652803" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-700 bg-white hover:bg-gray-50">
-                        <i data-feather="phone" class="mr-2"></i> Call Now
-                    </a>
-                    <a href="https://wa.me/254790652803" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
-                        <i data-feather="message-square" class="mr-2"></i> WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#122320">
+    <meta name="description" content="Jonakid Tech supplies and repairs printers, laptops and photocopiers in Nairobi and across Kenya. Order printers and spare parts on WhatsApp.">
+    <title>Jonakid Tech — Technology that keeps you moving</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement-dot" aria-hidden="true"></span>
+      <span>Repairs, reliable parts and office tech — all in one place</span>
+      <a href="#catalogue">Explore the shop <span aria-hidden="true">↗</span></a>
     </div>
 
-    <!-- Services Section -->
-    <div id="services" class="py-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Services</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Comprehensive Printer Solutions
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    We provide complete printer and photocopier services to keep your business running smoothly.
-                </p>
-            </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Jonakid Tech home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M14 9h20v20a10 10 0 0 1-20 0V9Z" stroke="currentColor" stroke-width="2.8"/><path d="M18 20h12M18 25h12M20 31h8M10 15h4M34 15h4M10 21h4M34 21h4" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/><path d="m24 2 2.1 4.2 4.7.7-3.4 3.3.8 4.7-4.2-2.2-4.2 2.2.8-4.7-3.4-3.3 4.7-.7L24 2Z" fill="#D9F36A"/></svg>
+        </span>
+        <span class="brand-copy"><strong>JONAKID<span>TECH</span></strong><small>Technology solutions</small></span>
+      </a>
 
-            <div class="mt-10">
-                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Service 1 -->
-                    <div class="service-card bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out" data-aos="fade-up">
-                        <div class="px-4 py-5 sm:p-6">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
-                                    <i data-feather="tool" class="h-6 w-6 text-white"></i>
-                                </div>
-                                <div class="ml-5 w-0 flex-1">
-                                    <h3 class="text-lg font-medium text-gray-900">Printer Repair</h3>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <ul class="list-disc pl-5 space-y-1 text-gray-500">
-                                    <li>Hardware repair</li>
-                                    <li>Ink/toner issues</li>
-                                    <li>Paper jams</li>
-                                    <li>Network setup</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav"><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#catalogue">Shop</a>
+        <a href="#spareparts">Parts finder</a>
+        <a href="#cctv">CCTV installation</a>
+        <a href="#services">Repairs & services</a>
+        <a href="#videos">Printer videos</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-whatsapp" href="https://wa.me/254790652803" target="_blank" rel="noopener" aria-label="Chat with Jonakid Tech on WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L4 20.3l1.1-4a8.4 8.4 0 1 1 15.4-4.5Z"/><path d="M8.6 8.2c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.3 0 .5.4.7 1 1.3 1.7 1.7.2.1.3.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.2 1-.6 1.4-.4.4-1 .7-1.6.7-.4 0-1-.1-1.7-.4-1-.4-2.2-1.2-3.2-2.3-.8-.9-1.4-1.9-1.6-2.8-.3-.9-.1-1.6.3-1.9.3-.3.6-.4.8-.4Z"/></svg>
+          <span>Chat with us</span>
+        </a>
+        <button class="cart-trigger" id="openCart" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17.5" cy="19.5" r="1.2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
 
-                    <!-- Service 2 -->
-                    <div class="service-card bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
-                        <div class="px-4 py-5 sm:p-6">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
-                                    <i data-feather="copy" class="h-6 w-6 text-white"></i>
-                                </div>
-                                <div class="ml-5 w-0 flex-1">
-                                    <h3 class="text-lg font-medium text-gray-900">Photocopier Repair</h3>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <ul class="list-disc pl-5 space-y-1 text-gray-500">
-                                    <li>Scanner and feeder issues</li>
-                                    <li>Print quality problems</li>
-                                    <li>Maintenance and cleaning</li>
-                                    <li>Toner and drum replacement</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="service-card bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
-                        <div class="px-4 py-5 sm:p-6">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 bg-blue-500 rounded-md p-3">
-                                    <i data-feather="settings" class="h-6 w-6 text-white"></i>
-                                </div>
-                                <div class="ml-5 w-0 flex-1">
-                                    <h3 class="text-lg font-medium text-gray-900">IT Support</h3>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <ul class="list-disc pl-5 space-y-1 text-gray-500">
-                                    <li>Computer diagnostics</li>
-                                    <li>Network troubleshooting</li>
-                                    <li>Software setup</li>
-                                    <li>Printer drivers installation</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Your technology partner in Kenya</div>
+          <h1>Technology that<br>keeps you <em>moving.</em></h1>
+          <p class="hero-lede">From a printer that needs fixing to a better equipped office, get the right technology, trusted repairs and parts that fit.</p>
+          <div class="hero-actions">
+            <a href="#catalogue" class="button button-lime">Shop products <span aria-hidden="true">↗</span></a>
+            <a href="#services" class="button button-ghost">Book a repair <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof"><div class="proof-avatars" aria-hidden="true"><span>J</span><span>T</span><span>+</span></div><span>Practical support for homes &amp; businesses</span></div>
         </div>
-    </div>
-
-    <!-- Spare Parts Section -->
-    <div id="parts" class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Products</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Genuine Spare Parts & Consumables
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    We stock high-quality parts for all major printer brands.
-                </p>
-            </div>
-
-            <div class="mt-10">
-                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                    <!-- Part 1 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow" data-aos="fade-up">
-                        <img src="cartilages.jpg" alt="Toner Cartridges" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">Toner Cartridges</h3>
-                            <p class="mt-1 text-sm text-gray-500">Original & compatible for all major brands</p>
-                            <div class="mt-4">
-                                <a href="https://wa.me/254790652803" class="text-sm font-medium text-blue-600 hover:text-blue-500">
-                                    Inquire now <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Part 2 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow" data-aos="fade-up" data-aos-delay="100">
-                        <img src="drum units.jpg" alt="Drum Units" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">Drum Units</h3>
-                            <p class="mt-1 text-sm text-gray-500">High-quality OPC drums for laser printers</p>
-                            <div class="mt-4">
-                                <a href="https://wa.me/254790652803" class="text-sm font-medium text-blue-600 hover:text-blue-500">
-                                    Inquire now <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Part 3 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow" data-aos="fade-up" data-aos-delay="200">
-                        <img src="pickup rubbers.jpg" alt="Pickup Rollers" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">Pickup Rollers</h3>
-                            <p class="mt-1 text-sm text-gray-500">Durable feed rollers for smooth paper handling</p>
-                            <div class="mt-4">
-                                <a href="https://wa.me/254790652803" class="text-sm font-medium text-blue-600 hover:text-blue-500">
-                                    Inquire now <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Part 4 -->
-                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow" data-aos="fade-up" data-aos-delay="300">
-                        <img src="fuser assemblies.jpg" alt="Fuser Assemblies" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">Fuser Assemblies</h3>
-                            <p class="mt-1 text-sm text-gray-500">Complete fuser units for laser printers</p>
-                            <div class="mt-4">
-                                <a href="https://wa.me/254790652803" class="text-sm font-medium text-blue-600 hover:text-blue-500">
-                                    Inquire now <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 text-center">
-                    <a href="https://wa.me/254790652803" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
-                        <i data-feather="shopping-cart" class="mr-2"></i> Order Parts via WhatsApp
-                    </a>
-                </div>
-            </div>
+        <div class="hero-art" aria-label="Illustration of a printer and laptop">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-sticker sticker-top"><span>01</span><div>Keep work<br>in motion</div></div>
+          <div class="hero-printer">
+            <div class="printer-paper"><span></span><span></span><span></span></div>
+            <div class="printer-top"></div>
+            <div class="printer-body"><div class="printer-panel"><i></i><i></i><b></b></div><div class="printer-slot"></div><div class="printer-front"></div></div>
+            <div class="printer-feet"><i></i><i></i></div>
+          </div>
+          <div class="hero-laptop"><div class="laptop-screen"><span class="screen-glow"></span><i>J</i></div><div class="laptop-base"></div></div>
+          <div class="floating-tag tag-repair"><span class="tag-icon">✦</span><span><b>Expert repairs</b><small>Printers · laptops · copiers</small></span></div>
+          <div class="floating-tag tag-parts"><span class="tag-icon tag-icon-lime">↗</span><span><b>Parts that fit</b><small>Ask us to check your model</small></span></div>
+          <div class="hero-spark spark-a">✳</div><div class="hero-spark spark-b">✳</div>
         </div>
-    </div>
+        <a class="scroll-cue" href="#catalogue"><span></span> Scroll to explore</a>
+      </section>
 
-    <!-- Video Section -->
-    <div class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">How We Work</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    See Our Repair Process
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    Watch this video to understand our professional approach to printer repairs
-                </p>
-            </div>
-            <div class="mt-10 flex justify-center" data-aos="zoom-in">
-                <div class="w-full max-w-4xl aspect-w-16 aspect-h-9">
-                    <iframe class="w-full h-96 rounded-lg shadow-lg" src="video main.mp4" title="Printer Repair Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+      <section class="value-strip" aria-label="Jonakid Tech services">
+        <div class="value-item"><span class="value-icon">01</span><div><strong>Buy with confidence</strong><small>Know your options and price</small></div></div>
+        <div class="value-item"><span class="value-icon">02</span><div><strong>Get it repaired</strong><small>Skilled printer, laptop &amp; copier care</small></div></div>
+        <div class="value-item"><span class="value-icon">03</span><div><strong>Find the right part</strong><small>We help check model compatibility</small></div></div>
+        <div class="value-item value-location"><span class="value-icon">◎</span><div><strong>Nairobi, Kenya</strong><small>Serving customers across Kenya</small></div></div>
+      </section>
+
+      <section class="shop-section section-wrap" id="catalogue">
+        <div class="section-heading shop-heading">
+          <div><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> The Jonakid shop</div><h2>Good tech.<br><em>Good to go.</em></h2></div>
+          <div class="shop-intro"><p>Browse laptops, desktop computers, printers, photocopiers and everyday replacement parts. Need help choosing? Tell us what you need and we’ll help you get the right match.</p><a href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%27d%20like%20help%20choosing%20a%20product." target="_blank" rel="noopener" class="text-link">Ask for a recommendation <span>↗</span></a></div>
         </div>
-    </div>
 
-    <!-- About Section -->
-    <div id="about" class="py-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-                <div class="mb-8 lg:mb-0" data-aos="fade-right">
-                    <img src="workshop.jpeg" alt="Our Workshop" class="rounded-lg shadow-lg">
-                    <div class="mt-6 text-center">
-                        <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700">
-                            <i data-feather="phone" class="mr-2"></i> Book a Repair
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:col-start-2" data-aos="fade-left">
-                    <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">About Us</h2>
-                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                        Printer System Solutions
-                    </p>
-                    <p class="mt-4 text-lg text-gray-500">
-                        Based in Limuru, we specialize in professional printer and photocopier repair services. With years of experience, we provide reliable solutions for both home and business customers.
-                    </p>
-                    <div class="mt-8">
-                        <ul class="space-y-4">
-                            <li class="flex">
-                                <i data-feather="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500"></i>
-                                <span class="ml-3 text-base text-gray-500">Certified technicians</span>
-                            </li>
-                            <li class="flex">
-                                <i data-feather="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500"></i>
-                                <span class="ml-3 text-base text-gray-500">Genuine spare parts</span>
-                            </li>
-                            <li class="flex">
-                                <i data-feather="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500"></i>
-                                <span class="ml-3 text-base text-gray-500">On-site service available</span>
-                            </li>
-                            <li class="flex">
-                                <i data-feather="check-circle" class="flex-shrink-0 h-6 w-6 text-green-500"></i>
-                                <span class="ml-3 text-base text-gray-500">Fast response times</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="shop-toolbar">
+          <div class="filter-list" id="filterList" role="group" aria-label="Filter products">
+            <button class="filter-chip active" data-filter="all">All products <span id="productCount">53</span></button>
+            <button class="filter-chip" data-filter="laptop">Laptops</button>
+            <button class="filter-chip" data-filter="computer">Desktop computers</button>
+            <button class="filter-chip" data-filter="epson">Epson</button>
+            <button class="filter-chip" data-filter="canon">Canon</button>
+            <button class="filter-chip" data-filter="laser">Laser printers</button>
+            <button class="filter-chip" data-filter="copier">Photocopiers</button>
+            <button class="filter-chip" data-filter="bizhub">Konica Minolta bizhub</button>
+            <button class="filter-chip" data-filter="parts">Parts &amp; supplies</button>
+          </div>
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.3 4.3"/></svg><span class="sr-only">Search products</span><input type="search" id="productSearch" placeholder="Search products..." autocomplete="off"></label>
         </div>
-    </div>
+        <div class="results-line"><span id="resultsLabel">Showing all products</span><span>Prices in KSh <i class="live-dot"></i> <span id="productPriceStatus">Kenya market guide · checked 2 Nov 2026</span></span></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No products found</h3><p>Try a different search or filter.</p></div>
+        <p class="price-disclaimer">Prices are indicative Kenyan market references checked 2 Nov 2026. Prices, stock and product condition may change; please confirm the exact model, compatibility and final price with Jonakid Tech on WhatsApp. Laptop and copier parts vary by device model.</p>
+      </section>
 
-    <!-- Contact Section -->
-    <div id="contact" class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Contact Us</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Get in Touch
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    We're here to help with all your printer needs.
-                </p>
-            </div>
+      <section class="parts-finder-section" id="spareparts">
+        <div class="section-wrap">
+          <div class="section-heading parts-finder-heading">
+            <div><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> Parts matching &amp; quotes</div><h2>Bring us the model.<br><em>We’ll match the part.</em></h2></div>
+            <div class="shop-intro"><p>Choose a laptop charger or battery, or tell us your printer make, model and the part you need. We’ll check the connector, rating, fit and live supplier stock before confirming an order.</p></div>
+          </div>
+          <div class="parts-finder-grid">
+            <article class="parts-finder-card">
+              <span class="drawer-kicker">LAPTOP POWER PARTS</span><h3>Chargers &amp; batteries</h3>
+              <div class="parts-fields">
+                <label>Brand<select id="laptopPartBrand"><option>HP</option><option>Lenovo</option><option>Dell</option><option>Acer</option><option>ASUS</option><option>MSI</option><option>Apple</option><option>Other</option></select></label>
+                <label>Exact laptop model<input id="laptopPartModel" type="text" list="laptopModels" placeholder="e.g. EliteBook 840 G3" autocomplete="off" required><datalist id="laptopModels"><option value="HP EliteBook 840 G3"><option value="Lenovo ThinkPad T480"><option value="Dell Vostro 3520"><option value="ASUS VivoBook X409FA"><option value="Acer Aspire 5 A514-54"><option value="MSI Modern 14 C13M"><option value="Apple MacBook Air M1 2020"></datalist></label>
+                <label>Part needed<select id="laptopPartType"><option value="charger">Laptop charger / AC adapter</option><option value="battery">Laptop battery</option></select></label>
+                <label>Charger connector or battery type<select id="laptopPartStyle"><option value="auto">Match to laptop model</option><option>HP blue pin 4.5 × 3.0 mm</option><option>HP big pin 7.4 × 5.0 mm</option><option>Small-pin barrel</option><option>Round barrel / other size</option><option>USB-C Power Delivery</option><option>Lenovo slim-tip rectangular</option><option>Internal battery</option><option>External / removable battery</option><option>Not sure - please identify it</option></select></label>
+                <label>Adapter output voltage (V)<input id="adapterVoltage" type="text" inputmode="decimal" placeholder="Model match or copy label"></label>
+                <label>Adapter output current (A)<input id="adapterCurrent" type="text" inputmode="decimal" placeholder="Model match or copy label"></label>
+                <label>Preferred quality<select id="laptopPartQuality"><option>Genuine manufacturer part</option><option>Compatible replacement</option><option>Show me both options</option></select></label>
+              </div>
+              <div class="parts-photo-gallery" id="laptopPartGallery" aria-label="Example charger and battery photos"></div>
+              <div class="parts-match-note" id="laptopPartMatch" role="status" aria-live="polite"></div>
+              <div class="parts-quote-line"><span>Indicative Kenya market estimate</span><strong id="laptopPartEstimate">Enter a laptop model</strong></div>
+              <button class="button button-dark" type="button" id="laptopPartWhatsApp">Ask for the exact part quote <span>↗</span></button>
+              <p class="parts-footnote">Voltages, connector pins and battery packs vary by sub-model. For an unlisted model, send a clear photo of the charger label / battery part number in WhatsApp before buying.</p>
+            </article>
 
-            <div class="mt-10">
-                <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-                    <div data-aos="fade-right">
-                        <div class="bg-gray-50 rounded-lg shadow-lg p-6">
-                            <h3 class="text-lg font-medium text-gray-900">Contact Information</h3>
-                            <div class="mt-6 space-y-4">
-                                <div class="flex">
-                                    <i data-feather="map-pin" class="flex-shrink-0 h-6 w-6 text-gray-400"></i>
-                                    <span class="ml-3 text-base text-gray-500">Limuru, Kenya</span>
-                                </div>
-                                <div class="flex">
-                                    <i data-feather="phone" class="flex-shrink-0 h-6 w-6 text-gray-400"></i>
-                                    <a href="tel:0790652803" class="ml-3 text-base text-gray-500 hover:text-blue-600">0790 652 803</a>
-                                </div>
-                                <div class="flex">
-                                    <i data-feather="mail" class="flex-shrink-0 h-6 w-6 text-gray-400"></i>
-                                    <a href="mailto:kimanijonathan556@gmail.com" class="ml-3 text-base text-gray-500 hover:text-blue-600">kimanijonathan556@gmail.com</a>
-                                </div>
-                                <div class="flex">
-                                    <i data-feather="clock" class="flex-shrink-0 h-6 w-6 text-gray-400"></i>
-                                    <span class="ml-3 text-base text-gray-500">Mon-Sat: 8:00 AM - 6:00 PM</span>
-                                </div>
-                            </div>
-                            <div class="mt-6">
-                                <a href="https://wa.me/254790652803" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
-                                    <i data-feather="message-square" class="mr-2"></i> Chat on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-left">
-                        <div class="bg-gray-50 rounded-lg shadow-lg p-6">
-                            <h3 class="text-lg font-medium text-gray-900">Send Us a Message</h3>
-                            <form class="mt-6 space-y-6">
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                    <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                                </div>
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <article class="parts-finder-card">
+              <span class="drawer-kicker">PRINTER &amp; COPIER SPARES</span><h3>Find the exact printer part</h3>
+              <div class="parts-fields">
+                <label>Printer type<select id="printerType"><option>Ink tank / EcoTank / Smart Tank</option><option>Ink cartridge printer</option><option>Monochrome laser printer</option><option>Colour laser printer</option><option>Dot-matrix printer</option><option>Thermal receipt / label printer</option><option>Wide-format / plotter</option><option>Multifunction printer</option><option>Photocopier / MFP</option><option>Other - tell us the model</option></select></label>
+                <label>Make<select id="printerBrand"><option>Epson</option><option>Canon</option><option>HP</option><option>Brother</option><option>Kyocera</option><option>Ricoh</option><option>Pantum</option><option>Xerox</option><option>Zebra</option><option>Other</option></select></label>
+                <label>Exact printer model<input id="printerModel" type="text" placeholder="e.g. Epson EcoTank L3250" autocomplete="off" required></label>
+                <label>Part or supply needed<select id="printerPartType">
+                  <option value="inkBottle">Ink bottle - EcoTank / tank printer</option><option value="inkCartridge">Ink cartridge - cartridge printer</option><option value="toner">Toner cartridge - laser printer</option><option value="powder">Toner refill / developer powder</option><option value="paper">Printing paper</option><option value="pickup">Pickup/feed roller or separation pad</option><option value="drum">OPC drum unit / drum kit</option><option value="fuser">Fuser unit / heat sleeve / pressure roller</option><option value="transfer">Transfer belt / transfer roller</option><option value="chargeRoller">Charge roller (PCR)</option><option value="waste">Cleaning blade / waste toner box / maintenance box</option><option value="printhead">Printhead / printhead assembly</option><option value="gears">Gears / timing belt</option><option value="motor">Motor / solenoid</option><option value="scanner">Scanner / ADF assembly or cable</option><option value="mainboard">Main board / DC controller board</option><option value="power">Power supply unit (PSU)</option><option value="sensor">Sensors / optocouplers</option><option value="other">Other spare part - describe in WhatsApp</option>
+                </select></label>
+                <label>Consumable / spare preference<select id="printerPartQuality"><option>Genuine manufacturer part</option><option>Compatible replacement</option><option>Either - show both</option><option>Repair / fitting quote</option></select></label>
+                <label>Quantity<input id="printerPartQuantity" type="number" min="1" max="99" value="1" inputmode="numeric"></label>
+              </div>
+              <div class="parts-photo-gallery" id="printerPartGallery" aria-label="Example printer consumables and spare-part photos"></div>
+              <div class="parts-match-note" id="printerPartMatch" role="status" aria-live="polite"></div>
+              <div class="parts-quote-line"><span>Indicative Kenya market estimate</span><strong id="printerPartEstimate">Enter make and model</strong></div>
+              <button class="button button-dark" type="button" id="printerPartWhatsApp">Get the exact printer-part quote <span>↗</span></button>
+              <p class="parts-footnote">We list ink, toner, drums, rollers, printheads, fusers, transfer parts, maintenance boxes, gears, motors, scanner/ADF parts, boards, power supplies, sensors and paper. Fit and part codes depend on the exact model.</p>
+            </article>
+          </div>
+          <p class="parts-market-note">Market figures are reference ranges from Kenyan retailers and service listings. Stock, genuine/compatible choice, model fit, VAT and installation change the final quote. The product feed can refresh these ranges when connected to a supplier price API or scheduled supplier file.</p>
         </div>
-    </div>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Services</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Printer Repair</a></li>
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Photocopier Repair</a></li>
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">IT Support</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Products</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Toner Cartridges</a></li>
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Drum Units</a></li>
-                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Pickup Rollers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
-                    <ul class="mt-4 space-y-4">
-                        <li><a href="#about" class="text-base text-gray-300 hover:text-white">About Us</a></li>
-                        <li><a href="#contact" class="text-base text-gray-300 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
-                    <div class="mt-4 flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="facebook"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="twitter"></i>
-                        </a>
-                        <a href="https://wa.me/254790652803" class="text-gray-400 hover:text-white">
-                            <i data-feather="message-square"></i>
-                        </a>
-                    </div>
-                </div>
+      <section class="cctv-section" id="cctv">
+        <div class="section-wrap cctv-inner">
+          <div class="cctv-intro">
+            <div class="eyebrow"><span class="eyebrow-line"></span> CCTV supply &amp; installation</div>
+            <h2>See what matters.<br><em>Stay in control.</em></h2>
+            <p>Choose the camera style and system size you need. We’ll prepare an indicative equipment and installation estimate, then confirm the exact models, site details and final price with you on WhatsApp.</p>
+            <div class="cctv-brand-block"><span>AVAILABLE BRANDS</span><div class="cctv-brand-pills"><b>Hikvision</b><b>Dahua</b><b>Uniview</b><b>EZVIZ</b><b>Imou</b><b>TP-Link Tapo</b></div></div>
+            <div class="cctv-includes"><span class="cctv-check">✓</span><span><strong>Pick the camera that suits the space</strong><small>Dome, bullet, turret, PTZ, IP, Wi-Fi and specialist options</small></span></div>
+            <div class="cctv-includes"><span class="cctv-check">✓</span><span><strong>Get a recorder sized for your cameras</strong><small>4, 8, 16, 32 or 64 channels, with storage options</small></span></div>
+          </div>
+
+          <div class="cctv-quote-card">
+            <div class="cctv-quote-heading"><div><span class="drawer-kicker">BUILD YOUR ESTIMATE</span><h3>CCTV quote builder</h3></div><span class="quote-live"><i></i> LIVE ESTIMATE</span></div>
+            <div class="cctv-form-grid">
+              <label class="cctv-field"><span>How many cameras?</span><div class="cctv-number-control"><button type="button" data-camera-step="-1" aria-label="Remove one camera">−</button><input id="cctvCount" type="number" min="1" max="64" value="4" inputmode="numeric" aria-label="Number of CCTV cameras"><button type="button" data-camera-step="1" aria-label="Add one camera">+</button></div></label>
+              <label class="cctv-field"><span>Camera style &amp; function</span><select id="cctvCameraType"></select><small id="cctvCameraDescription"></small></label>
+              <label class="cctv-field"><span>Preferred brand</span><select id="cctvBrand"></select></label>
+              <label class="cctv-field"><span>Recorder system</span><select id="cctvRecorder"></select><small id="cctvRecorderDescription"></small></label>
+              <label class="cctv-field"><span>Recorder channels</span><select id="cctvChannels"><option value="4">4 channels</option><option value="8">8 channels</option><option value="16">16 channels</option><option value="32">32 channels</option><option value="64">64 channels · NVR</option></select></label>
+              <label class="cctv-field"><span>Surveillance hard drive</span><select id="cctvStorage"><option value="0">No drive included</option><option value="1">1 TB · standard retention</option><option value="2">2 TB · longer retention</option><option value="4">4 TB · extended retention</option></select></label>
             </div>
-            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-                <div class="flex space-x-6 md:order-2">
-                    <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
-                    <a href="#" class="text-gray-400 hover:text-white">Terms</a>
-                </div>
-                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-                    &copy; 2023 Printer System Solutions. All rights reserved.
-                </p>
+            <div class="cctv-compat-note" id="cctvCompatibilityNote" aria-live="polite"></div>
+            <label class="install-toggle"><input id="cctvIncludeInstall" type="checkbox" checked><span class="toggle-box" aria-hidden="true">✓</span><span>Include standard installation estimate <small>Nairobi labour range; final price depends on site and cable runs</small></span></label>
+            <div class="cctv-estimate" aria-live="polite">
+              <div class="estimate-caption"><span>Indicative equipment &amp; installation</span><small>Kenyan market estimate · KSh</small></div>
+              <div class="estimate-row"><span id="cctvCameraLineLabel">4 × Bullet cameras</span><strong id="cctvCameraSubtotal">—</strong></div>
+              <div class="estimate-row"><span id="cctvRecorderLineLabel">4-channel XVR</span><strong id="cctvRecorderSubtotal">—</strong></div>
+              <div class="estimate-row"><span id="cctvStorageLineLabel">1 TB surveillance drive</span><strong id="cctvStorageSubtotal">—</strong></div>
+              <div class="estimate-row"><span id="cctvMaterialLineLabel">Cable, power &amp; connectors</span><strong id="cctvMaterialSubtotal">—</strong></div>
+              <div class="estimate-row"><span id="cctvInstallLineLabel">Nairobi installation estimate</span><strong id="cctvInstallSubtotal">—</strong></div>
+              <div class="estimate-total"><span>Estimated project range</span><strong id="cctvTotal">—</strong></div>
+              <p class="estimate-note" id="cctvEstimateNote">Cameras, recorder and storage are estimated separately. Cable, trunking, monitor, poles and special site work are confirmed in your final quote.</p>
             </div>
+            <button class="button button-lime cctv-quote-button" type="button" id="cctvWhatsApp">Get this quote on WhatsApp <span>↗</span></button>
+            <p class="cctv-market-note" id="cctvPriceStatus" role="status" aria-live="polite">Showing built-in Kenya market reference prices. Checking the online price feed…</p>
+            <p class="cctv-market-note">Prices are indicative Kenya references checked 2 Nov 2026. The site checks its feed on load and every 6 hours; automatic market changes require a connected supplier feed. Recorder type must match camera signal. The 64-channel option is an IP NVR. We’ll confirm models, availability, VAT and installation scope before supplying.</p>
+          </div>
         </div>
+      </section>
+
+      <section class="video-section" id="videos">
+        <div class="section-wrap video-inner">
+          <div class="section-heading video-heading">
+            <div><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> Printer care &amp; repairs</div><h2>Small fixes.<br><em>Clear steps.</em></h2></div>
+            <div class="shop-intro"><p>Watch a Jonakid Tech repair demonstration and manufacturer walkthroughs for common print-quality and paper-jam issues. Each video names the printer model it covers; steps can differ between models.</p><a href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20need%20help%20repairing%20a%20printer.%20Make%20and%20model%3A%20%5Bplease%20add%5D.%20Issue%3A%20%5Bplease%20describe%5D." target="_blank" rel="noopener" class="text-link">Ask Jonakid Tech for repair help <span>↗</span></a></div>
+          </div>
+          <div class="video-grid" id="videoGrid"></div>
+          <p class="video-disclaimer">These clips cover basic maintenance and troubleshooting. For internal parts replacement or a fault that persists, send us your printer make, model and issue on WhatsApp.</p>
+        </div>
+      </section>
+
+      <section class="service-section" id="services">
+        <div class="section-wrap service-inner">
+          <div class="service-copy"><div class="eyebrow"><span class="eyebrow-line"></span> The fix, without the fuss</div><h2>When tech<br>stops, <em>we start.</em></h2><p>Bring your device back to its best. Tell us the make, model and what’s gone wrong, and our team will guide you through the next step.</p><a class="button button-lime" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20need%20help%20with%20a%20repair.%20Device%20type%3A%20%5Bprinter%2Flaptop%2Fphotocopier%5D.%20Make%20and%20model%3A%20%5Bplease%20add%5D.%20Issue%3A%20%5Bplease%20describe%5D." target="_blank" rel="noopener">Tell us what needs fixing <span>↗</span></a></div>
+          <div class="service-cards">
+            <a class="service-card" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20need%20a%20printer%20repair.%20My%20printer%20make%2Fmodel%20is%20%5Bplease%20add%5D%20and%20the%20issue%20is%20%5Bplease%20describe%5D." target="_blank" rel="noopener"><span class="service-number">01 / PRINT</span><span class="service-glyph">▤</span><h3>Printer repairs</h3><p>Paper jams, print quality, setup and more.</p><span class="service-arrow">↗</span></a>
+            <a class="service-card" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20need%20a%20laptop%20repair.%20My%20laptop%20make%2Fmodel%20is%20%5Bplease%20add%5D%20and%20the%20issue%20is%20%5Bplease%20describe%5D." target="_blank" rel="noopener"><span class="service-number">02 / COMPUTE</span><span class="service-glyph">▱</span><h3>Laptop repairs</h3><p>Hardware, software, upgrades and care.</p><span class="service-arrow">↗</span></a>
+            <a class="service-card" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20need%20a%20photocopier%20repair.%20My%20copier%20make%2Fmodel%20is%20%5Bplease%20add%5D%20and%20the%20issue%20is%20%5Bplease%20describe%5D." target="_blank" rel="noopener"><span class="service-number">03 / OFFICE</span><span class="service-glyph">▦</span><h3>Photocopier service</h3><p>Maintenance and parts for busy offices.</p><span class="service-arrow">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section" id="testimonials">
+        <div class="section-wrap testimonial-inner">
+          <div class="testimonial-copy">
+            <div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> Customer project feedback</div>
+            <h2>Tell us how<br>your project <em>went.</em></h2>
+            <p>Share feedback about a repair, installation or product. Your note will be sent to Jonakid Tech on WhatsApp for review before it is published.</p>
+            <div class="testimonial-list" id="testimonialList" aria-live="polite"></div>
+            <p class="testimonial-empty" id="testimonialEmpty">No customer comments have been shared here yet. Be the first to leave feedback.</p>
+          </div>
+          <form class="testimonial-form" id="testimonialForm">
+            <span class="drawer-kicker">SHARE YOUR EXPERIENCE</span>
+            <h3>Leave a project comment</h3>
+            <label for="reviewName">Your name</label>
+            <input id="reviewName" name="name" type="text" maxlength="60" autocomplete="name" required placeholder="Name or business">
+            <label for="reviewProject">What was the project?</label>
+            <select id="reviewProject" name="project" required>
+              <option value="">Choose a project</option>
+              <option>Printer repair</option><option>Laptop repair</option><option>Photocopier repair</option>
+              <option>CCTV supply or installation</option><option>Product purchase</option><option>Other technology project</option>
+            </select>
+            <label for="reviewRating">Your rating</label>
+            <select id="reviewRating" name="rating" required>
+              <option value="5">5 stars - Excellent</option><option value="4">4 stars - Good</option><option value="3">3 stars - Okay</option><option value="2">2 stars</option><option value="1">1 star</option>
+            </select>
+            <label for="reviewComment">Comment about the project</label>
+            <textarea id="reviewComment" name="comment" rows="5" maxlength="600" required placeholder="What did Jonakid Tech work on? How did it go?"></textarea>
+            <button class="button button-dark" type="submit">Send comment on WhatsApp <span>↗</span></button>
+            <p class="testimonial-form-note" id="testimonialStatus" role="status" aria-live="polite">Your comment is saved in this browser and opened in WhatsApp. Public display needs approval from Jonakid Tech.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="about-section section-wrap" id="about">
+        <figure class="about-photo"><img src="workshop.jpeg" alt="Jonakid Tech workshop with a technician, printer and photocopier equipment, and toner stock" loading="lazy"><figcaption>Our workshop · Nairobi, Kenya</figcaption></figure>
+        <div class="about-copy"><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> A little about us</div><h2>Technology solutions<br>with a <em>human touch.</em></h2><p>At Jonakid Tech, we bring sales, repairs and practical know-how together. We help homes and businesses choose dependable equipment, keep it running and find compatible parts when they need them.</p><div class="about-stats"><div><strong>01</strong><span>Simple advice<br>for real needs</span></div><div><strong>02</strong><span>Repair support<br>that makes sense</span></div><div><strong>03</strong><span>Parts checked<br>for your model</span></div></div></div>
+      </section>
+
+      <section class="contact-band" id="contact"><div class="contact-band-inner"><div><span class="contact-label">LET’S GET YOU SORTED</span><h2>Have a question?<br><em>We’re one message away.</em></h2></div><a class="button button-dark" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%20have%20a%20question." target="_blank" rel="noopener">Chat on WhatsApp <span>↗</span></a><div class="contact-pattern" aria-hidden="true">✳</div></div></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main"><a class="brand brand-footer" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M14 9h20v20a10 10 0 0 1-20 0V9Z" stroke="currentColor" stroke-width="2.8"/><path d="M18 20h12M18 25h12M20 31h8M10 15h4M34 15h4M10 21h4M34 21h4" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/><path d="m24 2 2.1 4.2 4.7.7-3.4 3.3.8 4.7-4.2-2.2-4.2 2.2.8-4.7-3.4-3.3 4.7-.7L24 2Z" fill="#D9F36A"/></svg></span><span class="brand-copy"><strong>JONAKID<span>TECH</span></strong><small>Technology solutions</small></span></a><p>Technology, repairs and parts<br>that keep you moving.</p><div class="footer-social"><span>NAIROBI, KENYA</span><a href="https://wa.me/254790652803" target="_blank" rel="noopener">WHATSAPP ↗</a></div></div>
+      <div class="footer-links"><div><strong>Explore</strong><a href="#catalogue">Shop products</a><a href="#spareparts">Chargers &amp; parts finder</a><a href="#services">Repairs &amp; services</a><a href="#videos">Printer repair videos</a><a href="#testimonials">Customer feedback</a></div><div><strong>Shop by need</strong><a href="#catalogue" data-footer-filter="laptop">Laptops</a><a href="#catalogue" data-footer-filter="computer">Desktop computers</a><a href="#catalogue" data-footer-filter="epson">Epson printers</a><a href="#catalogue" data-footer-filter="canon">Canon printers</a><a href="#catalogue" data-footer-filter="copier">Photocopiers</a></div><div><strong>Talk to us</strong><a href="tel:+254790652803">+254 790 652 803</a><a href="https://wa.me/254790652803" target="_blank" rel="noopener">WhatsApp us ↗</a><a href="#contact">Nairobi, Kenya</a></div></div>
+      <div class="footer-bottom"><span>© <span id="currentYear">2026</span> Jonakid Tech. All rights reserved.</span><span>Everyday tech. Expert hands.</span><a href="#home">Back to top ↑</a></div>
     </footer>
 
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-        feather.replace();
-    </script>
-</body>
+    <a class="floating-whatsapp" href="https://wa.me/254790652803?text=Hi%20Jonakid%20Tech%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Message Jonakid Tech on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L4 20.3l1.1-4a8.4 8.4 0 1 1 15.4-4.5Z"/><path d="M8.6 8.2c.2-.5.5-.5.7-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.3 0 .5.4.7 1 1.3 1.7 1.7.2.1.3.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.2 1-.6 1.4-.4.4-1 .7-1.6.7-.4 0-1-.1-1.7-.4-1-.4-2.2-1.2-3.2-2.3-.8-.9-1.4-1.9-1.6-2.8-.3-.9-.1-1.6.3-1.9.3-.3.6-.4.8-.4Z"/></svg><span>Chat with us</span></a>
+
+    <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartTitle">
+      <div class="drawer-head"><div><span class="drawer-kicker">JONAKID SHOP</span><h2 id="cartTitle">Your cart <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-empty" id="cartEmpty"><div class="empty-cart-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17.5" cy="19.5" r="1.2"/></svg></div><h3>Your cart is taking a break</h3><p>Add a product and it’ll show up here.</p><button class="button button-dark" id="continueShopping">Continue shopping</button></div>
+      <div class="cart-footer" id="cartFooter"><div class="cart-total"><span>Estimated subtotal</span><strong id="cartSubtotal">KSh 0</strong></div><p>We’ll confirm availability and delivery with you on WhatsApp.</p><button class="button button-dark checkout-button" id="checkoutButton">Order cart on WhatsApp <span>↗</span></button></div>
+    </dialog>
+
+    <dialog class="zoom-dialog" id="zoomDialog" aria-labelledby="zoomTitle"><button class="icon-button zoom-close" id="closeZoom" aria-label="Close product details">×</button><div id="zoomContent"></div></dialog>
+    <dialog class="video-dialog" id="videoDialog" aria-labelledby="videoDialogTitle"><div class="video-dialog-head"><div><span class="drawer-kicker">PRINTER REPAIR WALKTHROUGH</span><h2 id="videoDialogTitle">Printer care video</h2></div><button class="icon-button" id="closeVideo" aria-label="Close video">×</button></div><div id="videoContent"></div><p class="video-note">The video may cover a different model. Check the steps for your exact printer, or message Jonakid Tech for repair support.</p></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
 </html>
+
