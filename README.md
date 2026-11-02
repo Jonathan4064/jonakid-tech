@@ -33,14 +33,12 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 
 The site uses custom vector illustrations for non-printer product visuals and Google Fonts when a network connection is available.
 
-## Firebase Hosting
+## Cloudflare Pages
 
-A `firebase.json` is included for this static site. From the repository root, sign in to Firebase CLI and deploy Hosting:
+This is a static site with no framework or build step. To deploy it using Git integration:
 
-```sh
-npm install -g firebase-tools
-firebase login
-firebase deploy --only hosting --project YOUR_FIREBASE_PROJECT_ID
-```
-
-Create or select a Firebase project first. Firebase Hosting can serve a custom domain, but `www.jonakidtech.co.ke` must be registered and its DNS records configured with the provider that controls it. After Firebase verifies the domain, update the canonical URL, social links and sitemap to the custom domain. Keep Google Search Console verified and resubmit the sitemap.
+1. In Cloudflare, open **Workers & Pages** and create a Pages application connected to Git.
+2. Connect GitHub and select `Jonathan4064/jonakid-tech`.
+3. Use `main` as the production branch, leave the build command blank, and set the build output directory to `.`.
+4. After the first deploy, add `www.jonakidtech.co.ke` under the Pages project’s **Custom domains** and follow the DNS records shown by Cloudflare.
+5. Once the custom domain works over HTTPS, update the canonical URL, social URLs and sitemap to that host, then resubmit the sitemap in Search Console.
