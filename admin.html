@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#122320">
+  <title>Jonakid Tech Admin</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root{color-scheme:light;--ink:#172622;--muted:#61706a;--lime:#d9f36a;--line:#dfe6df;--paper:#f5f7f2}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Arial,sans-serif}
+    header{background:#122320;color:white;padding:18px max(24px,calc((100vw - 1040px)/2));display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .brand{color:white;text-decoration:none;font-weight:800;letter-spacing:.08em}.brand span{color:var(--lime)}
+    main{max-width:1040px;margin:56px auto;padding:0 22px}.eyebrow{color:#647c37;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    h1{font-size:clamp(2.2rem,6vw,4.3rem);line-height:1.05;letter-spacing:-.05em;margin:.6rem 0 1rem}
+    .lead{max-width:680px;color:var(--muted);font-size:1.1rem}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:34px 0}
+    .card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 32px #14241b0a}
+    .card h2{font-size:1.22rem;margin:.2rem 0 .65rem}.card p{color:var(--muted);min-height:52px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 17px;border-radius:999px;background:#122320;color:white;text-decoration:none;font-weight:700}
+    .button.primary{background:var(--lime);color:#172622}.status{border-left:4px solid #c58921;background:#fff9e9;border-radius:8px;padding:16px 18px;color:#5d4b26}
+    ol{padding-left:22px;color:var(--muted)}li{padding:4px 0}code{font-size:.95em;background:#eef1e9;padding:2px 5px;border-radius:4px}
+    footer{max-width:1040px;padding:20px 22px 36px;margin:auto;color:var(--muted);font-size:.9rem}
+    @media(max-width:560px){header{padding:16px 20px}main{margin:36px auto}.card p{min-height:0}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">JONAKID<span>TECH</span> · ADMIN</a>
+    <a class="button primary" href="index.html">Open website ↗</a>
+  </header>
+  <main>
+    <div class="eyebrow">Owner dashboard</div>
+    <h1>Website tools</h1>
+    <p class="lead">Manage the public website and open its private analytics reports. Google sign-in is required to view traffic.</p>
+    <section class="cards" aria-label="Admin links">
+      <article class="card">
+        <h2>Visit the live website</h2>
+        <p>Open the Jonakid Tech shop, services and WhatsApp order links.</p>
+        <a class="button primary" href="https://jonathan4064.github.io/jonakid-tech/">Open Jonakid Tech ↗</a>
+      </article>
+      <article class="card">
+        <h2>Website visitors</h2>
+        <p>Open Google Analytics to view visits, popular pages, traffic sources and engagement.</p>
+        <a class="button" href="https://analytics.google.com/analytics/web/">Open Google Analytics ↗</a>
+      </article>
+      <article class="card">
+        <h2>Google Search visibility</h2>
+        <p>Review search impressions, clicks, indexing and queries after adding the site to Search Console.</p>
+        <a class="button" href="https://search.google.com/search-console/">Open Search Console ↗</a>
+      </article>
+    </section>
+    <div class="status"><strong>Analytics setup required:</strong> visitor reporting is not connected yet. Create a GA4 property for this website, then send Jonakid Tech its web stream Measurement ID (starts with <code>G-</code>) so it can be added to the site. Reports begin after tracking is installed and may take time to appear. Reports show aggregated activity, not a list of visitors' identities.</div>
+    <h2>Connect visitor tracking</h2>
+    <ol>
+      <li>Open Google Analytics and create a GA4 property.</li>
+      <li>Add a Web data stream for <code>jonathan4064.github.io</code>.</li>
+      <li>Copy the stream's Measurement ID beginning with <code>G-</code>.</li>
+      <li>Send that ID to Jonakid Tech to connect tracking to the live website.</li>
+    </ol>
+  </main>
+  <footer>Keep this page link private. It does not contain a password or expose visitor reports; Google requires your signed-in account to view analytics.</footer>
+</body>
+</html>
