@@ -285,6 +285,9 @@ h1 em, h2 em { font-style: normal; color: var(--lime); }
 
 .about-section { padding-top: 111px; padding-bottom: 111px; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 10%; }
 .about-art { height: 370px; position: relative; display: flex; align-items: center; justify-content: center; }
+.about-photo { width: 100%; max-width: 440px; height: clamp(360px, 44vw, 520px); margin: 0; position: relative; overflow: hidden; border-radius: 9px; background: #e6e9df; box-shadow: 0 22px 50px #1c302315; }
+.about-photo img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 24%; }
+.about-photo figcaption { padding: 8px 11px; position: absolute; left: 14px; bottom: 14px; border: 1px solid #ffffff3d; border-radius: 4px; background: #0d211ddd; color: #fff; font-size: 9px; font-weight: 700; letter-spacing: .04em; }
 .about-orb { width: 290px; height: 290px; position: absolute; border-radius: 50%; background: #e3e9d8; }
 .about-orb:before, .about-orb:after { content: ""; position: absolute; border: 1px solid #c8d4bf; border-radius: 50%; }
 .about-orb:before { inset: 23px; }
@@ -453,6 +456,7 @@ dialog::backdrop { background: #0b1714a6; backdrop-filter: blur(3px); }
   .video-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .about-section { padding-top: 70px; padding-bottom: 70px; grid-template-columns: .85fr 1.15fr; gap: 5%; }
   .about-art { height: 315px; transform: scale(.9); }
+  .about-photo { height: min(460px, 50vw); }
   .contact-band { padding: 45px 7%; }
   .site-footer { padding-right: 7%; padding-left: 7%; }
 }
@@ -555,6 +559,7 @@ dialog::backdrop { background: #0b1714a6; backdrop-filter: blur(3px); }
   .play-button svg { width: 15px; height: 15px; }
   .about-section { padding-top: 59px; padding-bottom: 59px; grid-template-columns: 1fr; gap: 24px; }
   .about-art { height: 285px; order: 2; transform: scale(.85); margin-top: -8px; }
+  .about-photo { width: min(100%, 380px); height: auto; aspect-ratio: 3 / 4; order: 2; margin: 0 auto; }
   .about-copy { order: 1; }
   .about-copy h2 { font-size: 39px; }
   .about-copy > p { margin-top: 15px; font-size: 11px; }
