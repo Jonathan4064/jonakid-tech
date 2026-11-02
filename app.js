@@ -612,6 +612,14 @@ const products = [
 
 const videoGuides = [
   {
+    id: "jonakid-printer-repair",
+    src: "video%20main.mp4",
+    title: "Printer repair walkthrough",
+    maker: "Jonakid Tech",
+    model: "Printer repairs",
+    summary: "Watch a printer repair demonstration from the Jonakid Tech team."
+  },
+  {
     id: "m_S88wTaBLw",
     title: "Clean an Epson print head",
     maker: "Epson America",
@@ -1305,14 +1313,17 @@ function renderProducts() {
 function renderVideos() {
   videoGrid.innerHTML = videoGuides.map(guide => `
     <button class="video-card" type="button" data-video-id="${guide.id}" aria-label="Play ${escapeHtml(guide.title)}">
-      <span class="video-thumb"><img src="https://i.ytimg.com/vi/${guide.id}/hqdefault.jpg" alt="" loading="lazy"><span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></svg></span><span class="video-label">WATCH VIDEO</span></span>
+      <span class="video-thumb">${guide.src ? `<video src="${escapeHtml(guide.src)}#t=0.2" muted playsinline preload="metadata" aria-hidden="true"></video>` : `<img src="https://i.ytimg.com/vi/${guide.id}/hqdefault.jpg" alt="" loading="lazy">`}<span class="play-button" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></svg></span><span class="video-label">WATCH VIDEO</span></span>
       <span class="video-card-copy"><span class="video-maker">${escapeHtml(guide.maker)} <i></i> ${escapeHtml(guide.model)}</span><strong>${escapeHtml(guide.title)}</strong><span class="video-summary">${escapeHtml(guide.summary)}</span></span>
     </button>`).join("");
 }
 
 function openVideo(guide) {
   document.getElementById("videoDialogTitle").textContent = guide.title;
-  videoContent.innerHTML = `<div class="video-frame-wrap"><iframe src="https://www.youtube-nocookie.com/embed/${guide.id}?rel=0&modestbranding=1" title="${escapeHtml(guide.title)} — ${escapeHtml(guide.maker)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
+  const player = guide.src
+    ? `<video controls autoplay playsinline preload="metadata"><source src="${escapeHtml(guide.src)}" type="video/mp4">Your browser does not support MP4 video.</video>`
+    : `<iframe src="https://www.youtube-nocookie.com/embed/${guide.id}?rel=0&modestbranding=1" title="${escapeHtml(guide.title)} — ${escapeHtml(guide.maker)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+  videoContent.innerHTML = `<div class="video-frame-wrap">${player}</div>`;
   videoDialog.showModal();
 }
 
