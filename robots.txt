@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jonathan4064.github.io/jonakid-tech/sitemap.xml
