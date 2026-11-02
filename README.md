@@ -9,6 +9,7 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 - Product search and category filters
 - Product image magnifier/details view
 - A Jonakid Tech printer repair video plus manufacturer walkthroughs for Epson print-head cleaning and Canon paper-jam removal
+- A real photo from the Jonakid Tech workshop and stockroom
 - CCTV quote builder for camera quantities, 11 camera types, Hikvision/Dahua/Uniview/EZVIZ/Imou/TP-Link Tapo brands, DVR/XVR/NVR channel sizes, storage and Nairobi installation estimates; sends the quote to WhatsApp
 - Quantity selectors, browser cart and WhatsApp cart checkout
 - Individual product orders and repair enquiry links prefilled for WhatsApp
