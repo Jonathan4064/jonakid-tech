@@ -1,6 +1,6 @@
-# Jonakid Tech website
+# Jonatech Solutions website
 
-This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` folder over HTTP (for example with VS Code Live Server) or deploy it to a web host; the JSON price feed needs HTTP access.
+This is a responsive, static storefront for Jonatech Solutions. Serve the `outputs` folder over HTTP (for example with VS Code Live Server) or deploy it to a web host; the JSON price feed needs HTTP access.
 
 ## What's included
 
@@ -8,8 +8,8 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 - Desktop range includes mini PCs, small-form-factor PCs, towers, all-in-ones and refurbished complete sets, with supplier listing links and magnifiable product photos
 - Product search and category filters
 - Product image magnifier/details view
-- A Jonakid Tech printer repair video plus manufacturer walkthroughs for Epson print-head cleaning and Canon paper-jam removal
-- A real photo from the Jonakid Tech workshop and stockroom
+- A Jonatech Solutions printer repair video plus manufacturer walkthroughs for Epson print-head cleaning and Canon paper-jam removal
+- A real photo from the Jonatech Solutions workshop and stockroom
 - CCTV quote builder for camera quantities, 11 camera types, Hikvision/Dahua/Uniview/EZVIZ/Imou/TP-Link Tapo brands, DVR/XVR/NVR channel sizes, storage and Nairobi installation estimates; sends the quote to WhatsApp
 - Quantity selectors, browser cart and WhatsApp cart checkout
 - Individual product orders and repair enquiry links prefilled for WhatsApp
@@ -17,7 +17,7 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 - Laptop charger / battery finder with model entry, verified HP EliteBook 840 G3 and Lenovo ThinkPad T480 examples, connector photos and model-specific voltage / amperage only where checked
 - Printer spare-parts finder covering inks, toner, drums, rollers, fusers, printheads, transfer parts, waste boxes, mechanical assemblies, electronics and paper
 - Product photos and magnifier views for the Epson 003 black bottle, Epson L3210/L3250 waste ink pad, Ricoh MP2501 toner and drum, laptop DDR4 RAM, HP CS03XL battery and 840 G3 keyboard, Canon LBP6030B pickup roller, Canon GI-490 ink and Canon 725 toner
-- Customer project feedback form; comments are saved on the visitor's device and sent to Jonakid Tech in WhatsApp for review
+- Customer project feedback form; comments are saved on the visitor's device and sent to Jonatech Solutions in WhatsApp for review
 
 ## Details to maintain
 
@@ -33,12 +33,8 @@ This is a responsive, static storefront for Jonakid Tech. Serve the `outputs` fo
 
 The site uses custom vector illustrations for non-printer product visuals and Google Fonts when a network connection is available.
 
-## Cloudflare Pages
+## Vercel
 
-This is a static site with no framework or build step. To deploy it using Git integration:
+Production URL: https://jonatech-solutions.vercel.app/
 
-1. In Cloudflare, open **Workers & Pages** and create a Pages application connected to Git.
-2. Connect GitHub and select `Jonathan4064/jonakid-tech`.
-3. Use `main` as the production branch, leave the build command blank, and set the build output directory to `.`.
-4. After the first deploy, add `www.jonakidtech.co.ke` under the Pages project’s **Custom domains** and follow the DNS records shown by Cloudflare.
-5. Once the custom domain works over HTTPS, update the canonical URL, social URLs and sitemap to that host, then resubmit the sitemap in Search Console.
+This is a static website with no framework or build step. The GitHub repository `Jonathan4064/jonakid-tech` deploys from its `main` branch through Vercel. Set the project name to `jonatech-solutions`; Vercel serves `index.html` and the separate pages directly. No build command is required.

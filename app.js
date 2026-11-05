@@ -24,7 +24,7 @@ const products = [
     specs: ["Intel Core i5-6300U, 2.4 GHz", "8GB DDR4 RAM", "256GB SSD", "14-inch Full HD display", "Intel HD Graphics 520", "Windows 10 Pro", "Refurbished; confirm condition and warranty"],
     offer: "Laptop bag included",
     priceSource: "https://nairobicomputershop.co.ke/catalogue/hp-elitebook-840-g3-laptop-14-hd-display-intel-core-i5-6300u-24ghz-256gb-ssd-8gb-ddr4-ram-webcam-wifi-windows-10-pro_517/",
-    description: "Refurbished business laptop listing with a 6th Gen Core i5, Full HD screen, 8GB RAM and 256GB SSD. Laptop bag included with this Jonakid Tech offer; confirm condition and warranty terms."
+    description: "Refurbished business laptop listing with a 6th Gen Core i5, Full HD screen, 8GB RAM and 256GB SSD. Laptop bag included with this Jonatech Solutions offer; confirm condition and warranty terms."
   },
   {
     id: "lenovo-thinkpad-t480",
@@ -46,7 +46,7 @@ const products = [
     specs: ["Intel Core i5 8th Gen", "8GB DDR4 RAM", "256GB SSD", "14-inch touchscreen", "Intel UHD Graphics 620", "Refurbished listing; confirm actual condition and warranty"],
     offer: "Laptop bag included",
     priceSource: "https://dealfit.co.ke/products/lenovo-thinkpad-t480-14-touchscreen-core-i5-8gb-ram-256gb-ssd-laptop?variant=67630119977202",
-    description: "Refurbished ThinkPad T480 touchscreen configuration. Listed at a sale price in Kenya; confirm stock, screen condition and warranty. Laptop bag included with this Jonakid Tech offer."
+    description: "Refurbished ThinkPad T480 touchscreen configuration. Listed at a sale price in Kenya; confirm stock, screen condition and warranty. Laptop bag included with this Jonatech Solutions offer."
   },
   {
     id: "dell-vostro-3520",
@@ -67,7 +67,7 @@ const products = [
     specs: ["Intel Core i3", "8GB RAM", "512GB SSD", "15.6-inch Full HD 120Hz display", "Windows 11 Pro", "New listing; confirm exact processor variant"],
     offer: "Laptop bag included",
     priceSource: "https://nairobicomputershop.co.ke/catalogue/dell-vostro-3520-business-laptop-156-fhd-120hz-display-intel-core-i3-8gb-ram-512gb-ssd-sd-card-reader-webcam-hdmi-rj-45-wi-fi-windows-11-pro-black_1045/",
-    description: "Business-focused 15.6-inch Vostro listing with Full HD 120Hz display, 8GB RAM and 512GB SSD. Confirm the exact processor variant and stock. Laptop bag included with this Jonakid Tech offer."
+    description: "Business-focused 15.6-inch Vostro listing with Full HD 120Hz display, 8GB RAM and 512GB SSD. Confirm the exact processor variant and stock. Laptop bag included with this Jonatech Solutions offer."
   },
   {
     id: "asus-x409fa",
@@ -88,7 +88,7 @@ const products = [
     specs: ["Intel Core i7-8565U", "8GB DDR4 RAM", "1TB HDD", "14-inch HD display", "Intel UHD Graphics 620", "Windows 10 Home"],
     offer: "Laptop bag included",
     priceSource: "https://nairobicomputershop.co.ke/catalogue/asus-x409fa-bv498t-intel-core-i7-8565u-8gb-ddr4-ram-1tb-hdd-windows-10-home-14-hd_863/",
-    description: "14-inch VivoBook listing with an 8th Gen Core i7, 8GB RAM and a 1TB hard drive. Confirm exact configuration and stock. Laptop bag included with this Jonakid Tech offer."
+    description: "14-inch VivoBook listing with an 8th Gen Core i7, 8GB RAM and a 1TB hard drive. Confirm exact configuration and stock. Laptop bag included with this Jonatech Solutions offer."
   },
   {
     id: "acer-aspire-5-a514-54",
@@ -131,7 +131,7 @@ const products = [
     specs: ["Intel Core i5-1334U, 13th Gen, 10 cores / 12 threads", "8GB RAM", "512GB NVMe SSD", "14-inch Full HD IPS display", "Backlit keyboard"],
     offer: "Laptop bag included",
     priceSource: "https://mctrading.co.ke/product/msi-modern-14-c13m-laptop-intel-core-i5-1334u-8gb-ram-512gb-ssd-14-fhd-display-backlit-keyboard",
-    description: "Lightweight productivity laptop listed in Kenya with a 13th Gen Core i5, 8GB RAM and 512GB SSD. Confirm stock and exact warranty. Laptop bag included with this Jonakid Tech offer."
+    description: "Lightweight productivity laptop listed in Kenya with a 13th Gen Core i5, 8GB RAM and 512GB SSD. Confirm stock and exact warranty. Laptop bag included with this Jonatech Solutions offer."
   },
   {
     id: "apple-macbook-air-m1-2020",
@@ -615,9 +615,9 @@ const videoGuides = [
     id: "jonakid-printer-repair",
     src: "video%20main.mp4",
     title: "Printer repair walkthrough",
-    maker: "Jonakid Tech",
+    maker: "Jonatech Solutions",
     model: "Printer repairs",
-    summary: "Watch a printer repair demonstration from the Jonakid Tech team."
+    summary: "Watch a printer repair demonstration from the Jonatech Solutions team."
   },
   {
     id: "m_S88wTaBLw",
@@ -992,7 +992,7 @@ function requestCctvQuote() {
   const installEntry = cctvInstallRanges.find(entry => count <= entry.max);
   const installRange = !cctvIncludeInstall.checked ? "not included" : installEntry ? formatRange(installEntry.range) : "site survey required";
   const message = [
-    "Hi Jonakid Tech, please prepare a CCTV installation quote:",
+    "Hi Jonatech Solutions, please prepare a CCTV installation quote:",
     `Cameras: ${count} × ${type.label} (${type.description})`,
     `Preferred camera brand: ${cctvBrand.value}`,
     `Recorder: ${channels}-channel ${recorderType} (${formatRange(recorderRange)})`,
@@ -1153,7 +1153,7 @@ function requestLaptopPartQuote() {
     ? `Adapter output: ${document.getElementById("adapterVoltage").value || "please verify from label"} V · ${document.getElementById("adapterCurrent").value || "please verify from label"} A. Connector: ${connector}.`
     : `Battery/part reference: ${profile?.battery.part || "please identify from the battery label"}.`;
   const price = document.getElementById("laptopPartEstimate").textContent;
-  openWhatsApp(["Hi Jonakid Tech, please identify and quote a laptop part:", `Brand: ${brand}`, `Laptop model: ${model}`, `Part: ${isCharger ? "Charger / AC adapter" : "Battery"}`, specification, `Preference: ${document.getElementById("laptopPartQuality").value}`, `On-page Kenya market estimate: ${price}`, "Please confirm exact part number, connector / battery fit, stock, warranty and final price. I can send a photo of the laptop label or old part here."].join("\n"));
+  openWhatsApp(["Hi Jonatech Solutions, please identify and quote a laptop part:", `Brand: ${brand}`, `Laptop model: ${model}`, `Part: ${isCharger ? "Charger / AC adapter" : "Battery"}`, specification, `Preference: ${document.getElementById("laptopPartQuality").value}`, `On-page Kenya market estimate: ${price}`, "Please confirm exact part number, connector / battery fit, stock, warranty and final price. I can send a photo of the laptop label or old part here."].join("\n"));
 }
 
 function requestPrinterPartQuote() {
@@ -1163,7 +1163,7 @@ function requestPrinterPartQuote() {
   const partSelect = document.getElementById("printerPartType");
   const quantity = Number(document.getElementById("printerPartQuantity").value);
   const price = document.getElementById("printerPartEstimate").textContent;
-  openWhatsApp(["Hi Jonakid Tech, please quote a printer spare / supply:", `Printer type: ${document.getElementById("printerType").value}`, `Make and exact model: ${brand} ${model}`, `Part needed: ${partSelect.selectedOptions[0].text}`, `Quantity: ${quantity}`, `Preference: ${document.getElementById("printerPartQuality").value}`, `On-page Kenya market estimate: ${price}`, "Please confirm the exact OEM / compatible part code, model fit, stock, VAT and final price. I can attach a photo of the printer rating plate or the old part here."].join("\n"));
+  openWhatsApp(["Hi Jonatech Solutions, please quote a printer spare / supply:", `Printer type: ${document.getElementById("printerType").value}`, `Make and exact model: ${brand} ${model}`, `Part needed: ${partSelect.selectedOptions[0].text}`, `Quantity: ${quantity}`, `Preference: ${document.getElementById("printerPartQuality").value}`, `On-page Kenya market estimate: ${price}`, "Please confirm the exact OEM / compatible part code, model fit, stock, VAT and final price. I can attach a photo of the printer rating plate or the old part here."].join("\n"));
 }
 
 document.getElementById("laptopPartBrand").addEventListener("change", updateLaptopPartQuote);
@@ -1388,7 +1388,7 @@ function openWhatsApp(message) {
 
 function orderOne(product, quantity) {
   const message = [
-    "Hi Jonakid Tech, I’d like to order:",
+    "Hi Jonatech Solutions, I’d like to order:",
     `• ${product.name} — quantity ${quantity}`,
     `Indicative price: ${formatPrice(product.price)} each · estimated line total: ${formatPrice(product.price * quantity)}`,
     "Please confirm availability, final price and delivery options."
@@ -1403,7 +1403,7 @@ function checkoutCart() {
     return `• ${product.name} — qty ${item.qty} × ${formatPrice(product.price)} = ${formatPrice(product.price * item.qty)}`;
   });
   const total = cart.reduce((sum, item) => sum + getProduct(item.id).price * item.qty, 0);
-  const message = ["Hi Jonakid Tech, I’d like to order the following items:", ...lines, `Estimated subtotal: ${formatPrice(total)}`, "Please confirm availability, final prices and delivery options."].join("\n");
+  const message = ["Hi Jonatech Solutions, I’d like to order the following items:", ...lines, `Estimated subtotal: ${formatPrice(total)}`, "Please confirm availability, final prices and delivery options."].join("\n");
   openWhatsApp(message);
 }
 
@@ -1462,7 +1462,7 @@ function readTestimonials() {
 function renderTestimonials() {
   const reviews = readTestimonials();
   testimonialEmpty.hidden = reviews.length > 0;
-  testimonialList.innerHTML = reviews.map(review => `<article class="testimonial-card"><div class="testimonial-card-head"><span>${escapeHtml(review.name)} · ${escapeHtml(review.project)}</span><span class="testimonial-stars" aria-label="${Number(review.rating) || 5} out of 5 stars">${"★".repeat(Math.min(5, Math.max(1, Number(review.rating) || 5)))}</span></div><p>${escapeHtml(review.comment)}</p><small>Saved on this device · submitted for Jonakid Tech review</small></article>`).join("");
+  testimonialList.innerHTML = reviews.map(review => `<article class="testimonial-card"><div class="testimonial-card-head"><span>${escapeHtml(review.name)} · ${escapeHtml(review.project)}</span><span class="testimonial-stars" aria-label="${Number(review.rating) || 5} out of 5 stars">${"★".repeat(Math.min(5, Math.max(1, Number(review.rating) || 5)))}</span></div><p>${escapeHtml(review.comment)}</p><small>Saved on this device · submitted for Jonatech Solutions review</small></article>`).join("");
 }
 
 testimonialForm.addEventListener("submit", event => {
@@ -1479,11 +1479,11 @@ testimonialForm.addEventListener("submit", event => {
   reviews.unshift(review);
   try { localStorage.setItem(TESTIMONIALS_CACHE_KEY, JSON.stringify(reviews.slice(0, 12))); } catch { /* The WhatsApp submission still works if local storage is unavailable. */ }
   renderTestimonials();
-  const message = ["Hi Jonakid Tech, please review this customer project feedback before publishing:", `Name: ${review.name}`, `Project: ${review.project}`, `Rating: ${review.rating}/5`, `Comment: ${review.comment}`, "The customer submitted this through the website."].join("\n");
+  const message = ["Hi Jonatech Solutions, please review this customer project feedback before publishing:", `Name: ${review.name}`, `Project: ${review.project}`, `Rating: ${review.rating}/5`, `Comment: ${review.comment}`, "The customer submitted this through the website."].join("\n");
   openWhatsApp(message);
-  testimonialStatus.textContent = "WhatsApp opened with your comment. This browser shows a local copy while Jonakid Tech reviews it for publication.";
+  testimonialStatus.textContent = "WhatsApp opened with your comment. This browser shows a local copy while Jonatech Solutions reviews it for publication.";
   testimonialForm.reset();
-  showToast("Your feedback is ready to send to Jonakid Tech.");
+  showToast("Your feedback is ready to send to Jonatech Solutions.");
 });
 
 filterList.addEventListener("click", event => {
